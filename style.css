@@ -41,10 +41,12 @@ form {
 
 form input {
   border: none;
+  border-radius: 0.4em;
   padding: 0.4em;
   font-size: 0.8em;
   text-align: center;
 }
+
 button {
   background-color: #fefbf3;
   border: none;
