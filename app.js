@@ -12,7 +12,7 @@ form.addEventListener("submit", function (e) {
   } else if (initial < 0 || quantity < 0 || current < 0) {
     result.innerText = "Negative values are not allowed";
   } else {
-    console.log(initial, quantity, current);
+    // console.log(initial, quantity, current);
 
     const sellingPrice = current;
     const costPrice = initial;
@@ -20,12 +20,12 @@ form.addEventListener("submit", function (e) {
     const Loss = loss(costPrice, sellingPrice);
 
     if (Profit >= 0) {
-      console.log(profitPrecentage(Profit, costPrice));
+      //   console.log(profitPrecentage(Profit, costPrice));
       result.innerText = `You have made a profit of ${
         Profit * parseInt(quantity)
       } that is ${profitPrecentage(Profit, costPrice)}%`;
     } else if (Loss >= 0) {
-      console.log(lossPercentage(Loss, costPrice));
+      //   console.log(lossPercentage(Loss, costPrice));
       result.innerText = `You have made a loss of ${
         Loss * parseInt(quantity)
       } that is ${lossPercentage(Loss, costPrice)}%`;
